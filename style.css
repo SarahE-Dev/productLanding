@@ -1,27 +1,35 @@
 * { margin: 0;
 padding: 0;
 box-sizing: border-box;
+font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
-#header-img { width: 40vw; 
-margin: 0 30vw;
-padding: 20px;
-}
+#header-img { width: 200px; 
+margin: 30px;}
+
+.logo { display: flex;
+justify-content: center;}
+
+.product { display: flex;
+justify-content: center; }
 
 
 h1 {
-color: darkslategray;
-background-color: cornflowerblue;
+color: white;
+background-color: darkgreen;
 width: max-content;
 padding: 10px;
 margin: 20px;
-margin-top: 70px;}
+margin-top: 90px;
+border-radius: 7px;
+font-size: 2rem;
+}
 
 
 .product { display: flex;
 justify-content: center;
-;}
+text-align: center;}
 
-#header { background-color: darkcyan;
+#header { background-color: black;
  }
 
 ul { display: flex;
@@ -29,31 +37,112 @@ flex-direction: row;
 justify-content: space-evenly;
 list-style-type: none; 
 padding: 0; 
-background-color: crimson;
+background-color: goldenrod;
 height: 50px; 
 align-items: center;
-font-size: 22px;
+text-align: center;
+
 
 
 }
 
 li a { text-decoration: none;
-color: lightgoldenrodyellow;
+color: black;
+text-shadow: 1px 1px 1px white;
+font-weight: bolder;
+font-size: 1.25rem;
  
 }
 
-#form { background-color: darkslateblue;
+.video { display: flex;
+justify-content: center;
+background-color: darkgreen;
+}
+
+iframe { margin: 30px;}
+
+#form { background-color: darkred;
 display: flex;
 align-items: center;
 flex-direction: column;
+padding: 30px;
+text-align: center;
+
+
 
 }
+
+#video { width: 400px;
+height: 300px; }
+
+h3 { color: goldenrod;
+padding: 10px;
+font-size: 1.5rem; }
+
+.info { display: flex; 
+justify-content: space-around;
+padding: 20px; 
+background-color: black;}
+
+.card { display: flex; 
+flex-direction: column;
+padding: 15px; 
+justify-content: center;
+text-align: center;
+background-color: goldenrod;
+margin: 10px;
+border-radius: 7px;
+text-shadow: 1px 1px 1px white;
+width: 30%;
+}
+.txt1 { font-size: 1.5rem; 
+padding-bottom: 10px;
+ }
+
+#email { width: 300px; 
+    margin: 20px;
+}
+
+#submit { background-color: darkgreen;
+padding: 5px;
+font-weight: bolder;
+border-style: none;
+color: white;}
 
 #nav-bar {position: fixed;
 width: 100%; 
 top: 0;
 left: 0; 
+border-bottom: 3px solid white;
 }
 
+.footer { background-color: black; 
+display: flex;
+flex-direction: column;
+justify-content: flex-end;}
+
+.foot2 { color: darkred; 
+text-shadow: .5px .5px .5px goldenrod;
+text-align: right;
+padding: 5px;}
+
+.foot { display: flex; 
+justify-content: right;
+justify-content: space-evenly;
+color: goldenrod;
+padding: 25px 15px 15px 15px;}
+
+.fs { background-color: darkgreen;
+text-shadow: 1px 1px 2px darkred;
+font-weight: bolder;
+font-size: 1.5rem;
+padding: 7px;
+border-radius: 7px;}
 
 
+
+
+@media (max-width: 450px) { #video { width: 200px;
+height: 150px; }
+    
+}
